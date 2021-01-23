@@ -1,0 +1,38 @@
+git init
+- inicia o git na pasta selecionada
+
+git add "nome do arquivo"
+- adiciona no servidor local um arquivo específico
+
+git add .
+- adiciona no servidor local todos os arquivos pendentes
+
+git rm -f "nome do arquivo"
+- força a remoção e deleta o arquivo do computador
+
+git rm --cached "nome do arquivo"
+- remove o arquivo do servidor local mas não deleta
+
+git commit -m ' descrever a mudança '
+- cria um commit local para ser enviado ao servidor remoto (commit é como se fosse um container que armazena os arquivos antes de enviar ao servidor remoto)
+- primeiro add no servidor local pra depois executar o commit
+
+git status
+- verifica o status dos arquivos da branch atual
+
+git checkout -- "nome do arquivo"
+- caso tenha feito alguma alteração e queira desfazer até a última add no servidor local antes de add
+- exemplo: add arquivo, fez uma alteração mas quer voltar o arquivo para como era na ultima add (serve para antes de add no servidor local)
+
+git remote (outros comandos)
+- conecta repositório local a repositório remoto
+- git remote -v verifica se ja tem alguma conexao
+- git remote add origin "url" (depois verifica com -v se está ok)
+
+git push (outros comandos)
+- envia os arquivos para gitHub
+- seleciona qual branch vc quer mandar, por exemplo a master: git push --set-upstram origin master
+
+git clone "url"
+- baixa códigos do gitHub - pegando url do código no gitHub
+
