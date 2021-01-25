@@ -34,5 +34,14 @@ git push (outros comandos)
 - seleciona qual branch vc quer mandar, por exemplo a master: git push --set-upstram origin master
 
 git clone "url"
-- baixa códigos do gitHub - pegando url do código no gitHub
+- clona códigos de um repositório do gitHub - pegando url do código no gitHub
 
+git pull
+- puxa as alterações do repositório no gitHub para seu servidor local (faz o fetch e o merge de uma vez)
+
+git fetch
+- se o servidor remoto está na frente (o git status não verifica isso), o fetch vai dizer e vai ver se a sua branch está apontando pra mesma do gitHub
+- se depois do fetch vc ver o git status, ele mostra agora que agora vc está atrás do servidor remoto
+
+git merge
+- 
